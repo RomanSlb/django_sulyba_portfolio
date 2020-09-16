@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link href="{% static 'css/base.css' %}" rel="stylesheet" type="text/css">
+     <link rel="shortcut icon" href="{% static 'img/icon-picture.png' %}" type="image/png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+<div class="header">
+    <header>
+        <div class="navigation">
+        <div class="interviewer_name">
+            <a href="{% url 'portfolio:home' %}">Roman Sulyba</a>
+        </div>
+        <div class="nav_panel">
+           <ul> <li><a href="{% url 'portfolio:home' %}">Home</a></li>
+                <li><a href="{% url 'portfolio:about_me' %}">About</a></li>
+                <li><a href="{% url 'portfolio:projects' %}">Projects</a></li>
+                <li><a href="{% url 'portfolio:contact' %}">Contact me</a></li>
+           </ul>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="search">
+            <button>Search</button>
+        </div>
+        </div>
+    </header>
+</div>
+<div class="content_container">
+    {% block content %}
+    {% endblock %}
+</div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+{% block title %}About Me{% endblock %}
+{% block content %}
+    <div class="about_me">
+        <h1>About me</h1>
+        <div class="block">
+            <div class="top">
+            <div class="image">
+                <img src="{% static 'img/me.JPG' %}" alt="Me">
+            </div>
+            <div class="info">
+                <div class="name">
+                    Roman Sulyba
+                </div>
+                <div class="city">
+                    Lviv
+                </div>
+                <div class="age">
+                    20 years
+                </div>
+            </div>
+            </div>
+            <div class="info-main">
+                <div class="contact_info">
+                    <h1>Contact information</h1>
+                    <p>Phone: <a href="tel:+380678517741">+38 (067) 851 77 41</a>
+                    <p>Email: romansulyba@gmail.com</p>
+                </div>
+                <div class="description">
+                    <h1>Description</h1>
+                    <p>Highly motivated student. Have a good practical skills in Python, Django.
+                    Actively improving skills in Web Developing and Python at the moment</p>
+                </div>
+                <div class="education">
+                    <h1>Education</h1>
+                    <p style="font-size: 20px;">Lviv Polytechnic National University</p>
+                    <p>Computer engineering</p>
+                    <p>Bachelor degree</p>
+                    <p>2017-2021</p>
+                </div>
+                <div class="skills">
+                    <h1>Skills</h1>
+                    <p>Python</p>
+                    <p>Django</p>
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>SQL</p>
+                </div>
+                <div class="courses">
+                    <h1>Courses, trainings, certificates</h1>
+                    <p>Data engineering</p>
+                    <p>2020</p>
+                    <p>Edx cs50 Django</p>
+                    <p>2020</p>
+                    <p>Udemy SQL</p>
+                    <img src="{% static 'img/start.jpg' %}">
+                    <img src="{% static 'img/advance.jpg' %}">
+                    <p>2020</p>
+                    <p>Prometheus</p>
+                    <img src="{% static 'img/CertificateWeb.jpg' %}">
+                    <p>2020</p>
+                </div>
+                <div class="languages">
+                    <h1>Languages</h1>
+                    <p>Ukrainian (mother tongue)</p>
+                    <p>Russian (advanced)</p>
+                    <p>English (upper intermediate)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+{% endblock %}
